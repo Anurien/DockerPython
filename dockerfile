@@ -4,6 +4,6 @@ WORKDIR /urs/src/app
 
 RUN pip install pytube
 
-COPY . .
+COPY ./app /usr/src/app
 
 CMD ["python","./miscript.py"]
