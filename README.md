@@ -44,3 +44,16 @@ En el Dockerfile podemos incluir la instalación de las librerias:
 
 `COPY requirements.txt ./`
 `RUN pip install --no-cache-dir -r requirements.txt`
+
+## Docker hub
+
+Una vez tenemos todo creado accedemos a nuestro terminal y ejecutamos la sucesión de estos comandos:
+
+`$ docker login`
+
+`$ docker tag youtubeimagen:latest anuriel/youtubeimage:sxe`
+
+`$ docker push anuriel/youtubeimage:latest`
+
+Donde nos autenticamos con nuestra cuenta de docker hub, posteriormente creamos el tag de nuestra imagen y lo vinculamos al repositorio de nuestra cuenta y finalmente realizamos el push del tag creado a nuestra cuenta y con la imagen seleccionada.
+
