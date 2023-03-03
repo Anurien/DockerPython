@@ -33,6 +33,20 @@ Una vez creada la imagen podemos usarla para lanzar el contenedor
 
 `$ docker run --rm -it youtubeimagen`
 
+El dockerfile se vería de la siguiente forma:
+
+``` 
+FROM python:3
+
+WORKDIR /usr/src/app
+
+RUN pip install pytube
+
+COPY ./app /usr/src/app
+
+CMD ["python","./miscript.py"] 
+```
+
 ---
 
 ## Dependencias
