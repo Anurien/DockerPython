@@ -1,16 +1,15 @@
-# This is a sample Python script.
+from pytube import YouTube
+import pytube
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+yt = YouTube("https://www.youtube.com/watch?v=Xa2eNz_YheM")
+yt2 = "https://www.youtube.com/watch?v=Xa2eNz_YheM"
+#Title of video
+print("Title: ",yt.title)
+#Number of views of video
+print("Number of views: ",yt.views)
+#Length of the video
+print("Length of video: ",yt.length,"seconds")
+#Description of video
+print("Description: ",yt.description)
+#Rating
+print("Ratings: ",yt.rating)
