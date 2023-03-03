@@ -1,6 +1,6 @@
 FROM python:3
 
-WORKDIR /urs/src/app
+WORKDIR /usr/src/app
 
 RUN pip install pytube
 
